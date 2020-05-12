@@ -32,6 +32,9 @@ body {
 }
 
 .navbar__logo {
+    width: 70px;
+    height: 38px;
+
     font-size: 0;
 }
 
@@ -64,11 +67,6 @@ body {
     margin-right: 0;
 }
 
-img {
-    width: 70px;
-    height: 38px;
-}
-
 .header__text h1 {
     margin-bottom: 14px;
 
@@ -79,4 +77,53 @@ img {
 .header__text p {
     font-size: 20px;
     line-height: 24px;
+}
+
+.footer {
+    width: 1366px;
+    height: 138px;
+
+    background-color: #011c40;
+}
+
+.footer .navbar {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.navbar__social-fb {
+    width: 11px;
+    height: 20px;
+}
+
+.navbar__social-inst {
+    width: 20px;
+    height: 20px;
+}
+
+.navbar__social-tw {
+    width: 20px;
+    height: 16px;
+}
+
+.navbar__social {
+    display: flex;
+    justify-content: space-between;
+
+    list-style-type: none;
+}
+
+.navbar__social-item {
+    margin-right: 33px;
+}
+
+.navbar__social-item:last-child {
+    margin-right: 0;
+}
+
+.footer .navbar__menu {
+    margin-right: auto;
+}
+
+.footer .navbar__logo {
+    margin-right: 40px;
 }
