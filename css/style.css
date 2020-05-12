@@ -79,6 +79,45 @@ body {
     line-height: 24px;
 }
 
+.trip {
+    height: 421px;
+    padding-top: 120px;
+}
+
+.trip__content {
+    display: flex;
+    align-items: center;
+
+    width: 1160px;
+    height: 301px;
+    margin: 0 auto;
+}
+
+.trip__text {
+    width: 600px;
+
+    line-height: 150%;
+}
+
+.trip__text h2 {
+    margin-right: 170px;
+    margin-bottom: 33px;
+
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.trip__text p {
+    margin-right: 88px;
+
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.trip__foto {
+    font-size: 0;
+}
+
 .footer {
     width: 1366px;
     height: 138px;
