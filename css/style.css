@@ -18,7 +18,13 @@ body {
     color: white;
     background-image: url(../img/header.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
 }
 
 .navbar {
@@ -26,7 +32,7 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    width: 1160px;
+    width: 100%;
     height: 38px;
     margin: 0 auto;
 
@@ -55,8 +61,8 @@ body {
 }
 
 .header__text {
-    padding-top: 210px;
-    padding-left: 198px;
+    margin-top: 210px;
+    margin-left: 198px;
 }
 
 .navbar__menu-link {
@@ -141,7 +147,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
-    width: 1160px;
+    width: 100%;
     height: 322px;
 
     color: #011c40;
