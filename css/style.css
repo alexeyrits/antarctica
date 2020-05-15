@@ -317,11 +317,12 @@ body {
 }
 
 .cruises__card-text {
+    position: relative;
+
     display: none;
 
     height: 100%;
     padding-top: 35px;
-    padding-bottom: 35px;
     padding-left: 25px;
 
     color: #f9fbfd;
@@ -373,6 +374,9 @@ body {
 }
 
 .cruises__link {
+    position: absolute;
+    bottom: 20px;
+
     display: flex;
     align-items: center;
     justify-content: center;
