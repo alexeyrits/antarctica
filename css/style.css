@@ -23,6 +23,15 @@ body {
     background-size: cover;
 }
 
+a:link,
+.navbar__logo {
+    opacity: 0.5;
+}
+
+a:hover {
+    opacity: 1;
+}
+
 .container {
     width: 1160px;
     margin: 0 auto;
