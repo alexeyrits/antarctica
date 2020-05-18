@@ -57,7 +57,7 @@ body {
     background-size: cover;
 }
 
-a:link,
+a,
 .navbar__logo {
     opacity: 0.5;
 }
@@ -72,6 +72,8 @@ a:hover {
 }
 
 .navbar {
+    position: relative;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -213,9 +215,11 @@ a:hover {
 }
 
 .pros__liner {
+    position: relative;
+
     width: 360px;
     height: 241px;
-    padding-top: 30px;
+    padding-top: 77px;
     padding-left: 30px;
 
     background-color: #f9fbfd;
@@ -223,10 +227,15 @@ a:hover {
     font-size: 0;
 }
 
-.pros__liner img {
+.pros__liner::before {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
     width: 27px;
     height: 32px;
-    margin-bottom: 15px;
+
+    content: url(../img/liner.svg);
 }
 
 .pros__liner h3 {
@@ -246,18 +255,25 @@ a:hover {
 }
 
 .pros__checkbox {
+    position: relative;
+
     width: 360px;
     height: 241px;
-    padding-top: 35px;
+    padding-top: 77px;
     padding-left: 30px;
 
     background-color: #f9fbfd;
 }
 
-.pros__checkbox img {
+.pros__checkbox::before {
+    position: absolute;
+    top: 35px;
+    left: 30px;
+
     width: 38px;
     height: 21px;
-    margin-bottom: 16px;
+
+    content: url(../img/checkbox.svg);
 }
 
 .pros__checkbox h3 {
@@ -277,18 +293,25 @@ a:hover {
 }
 
 .pros__boat {
+    position: relative;
+
     width: 360px;
     height: 241px;
-    padding-top: 38px;
+    padding-top: 77px;
     padding-left: 30px;
 
     background-color: #f9fbfd;
 }
 
-.pros__boat img {
+.pros__boat::before {
+    position: absolute;
+    top: 38px;
+    left: 30px;
+
     width: 42px;
     height: 15px;
-    margin-bottom: 19px;
+
+    content: url(../img/boat.svg);
 }
 
 .pros__boat h3 {
@@ -603,12 +626,43 @@ input[placeholder] {
     line-height: 150%;
 }
 
-.contacts__text-address p {
-    display: flex;
+.contacts__text-address_marker {
+    position: relative;
+
+    margin-bottom: 21px;
+    padding-left: 28px;
 }
 
-.contacts__text-address img {
-    margin-right: 10px;
+.contacts__text-address_marker::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 18px;
+    height: 22px;
+
+    content: url(../img/marker.svg);
+}
+
+.contacts__text-address_phone {
+    position: relative;
+
+    padding-left: 28px;
+}
+
+.contacts__text-address_phone::before {
+    position: absolute;
+    top: 3px;
+    left: 0;
+
+    width: 18px;
+    height: 18px;
+
+    content: url(../img/phone.svg);
+}
+
+.contacts__text-address p {
+    display: flex;
 }
 
 .footer {
@@ -622,40 +676,47 @@ input[placeholder] {
     background-color: #011c40;
 }
 
-.navbar__social-fb {
-    width: 11px;
-    height: 20px;
-}
-
-.navbar__social-inst {
-    width: 20px;
-    height: 20px;
-}
-
-.navbar__social-tw {
-    width: 20px;
-    height: 16px;
-}
-
-.navbar__social {
-    display: flex;
-    justify-content: space-between;
-
-    list-style-type: none;
-}
-
-.navbar__social-item {
-    margin-right: 33px;
-}
-
-.navbar__social-item:last-child {
-    margin-right: 0;
-}
-
 .footer .navbar__menu {
     margin-right: auto;
 }
 
 .footer .navbar__logo {
     margin-right: 40px;
+}
+
+.navbar__social {
+    list-style-type: none;
+}
+
+.navbar .navbar__social-fb::before {
+    position: absolute;
+    top: 10px;
+    right: 106px;
+
+    width: 11px;
+    height: 28px;
+
+    content: url(../img/facebook.svg);
+}
+
+.navbar .navbar__social-inst::before {
+    position: absolute;
+    top: 10px;
+    right: 53px;
+
+    width: 20px;
+    height: 20px;
+
+    content: url(../img/instagram.svg);
+}
+
+.navbar .navbar__social-tw::before {
+    position: absolute;
+    top: 11px;
+    right: 0;
+
+    width: 20px;
+    height: 16px;
+
+    content: url(../img/twitter.svg);
 }
