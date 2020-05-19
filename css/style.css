@@ -556,16 +556,14 @@ input[type="email"] {
     line-height: 150%;
 }
 
+::placeholder {
+    color: #011c40;
+}
+
 .form {
     display: flex;
     flex-direction: column;
 }
-
-/* input[type="checkbox"] { 
-    width: 18px;
-    height: 18px;
-    margin: 0;
- } */
 
 input[type="submit"] {
     width: 303px;
@@ -581,19 +579,6 @@ input[type="submit"] {
 input[placeholder] {
     padding-left: 10px;
 }
-
-/* .checkbox { 
-    display: flex;
-    align-items: center;
-
-    margin-bottom: 30px;
-
-    color: #f9fbfd;
-
-    font-size: 10px;
-    font-weight: normal;
-    line-height: 130%;
-} */
 
 input[type="checkbox"] {
     position: absolute;
