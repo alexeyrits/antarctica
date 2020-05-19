@@ -34,8 +34,6 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
@@ -204,6 +202,8 @@ a:hover {
 }
 
 .pros__title h2 {
+    margin: 0;
+
     font-size: 28px;
     font-weight: 600;
     line-height: 150%;
@@ -239,6 +239,7 @@ a:hover {
 }
 
 .pros__liner h3 {
+    margin-top: 0;
     margin-bottom: 10px;
 
     font-size: 18px;
@@ -247,7 +248,9 @@ a:hover {
 }
 
 .pros__liner p {
+    margin-top: 0;
     margin-right: 32px;
+    margin-bottom: 0;
 
     font-size: 14px;
     font-weight: normal;
@@ -277,6 +280,7 @@ a:hover {
 }
 
 .pros__checkbox h3 {
+    margin-top: 0;
     margin-bottom: 10px;
 
     font-size: 18px;
@@ -285,7 +289,9 @@ a:hover {
 }
 
 .pros__checkbox p {
+    margin-top: 0;
     margin-right: 50px;
+    margin-bottom: 0;
 
     font-size: 14px;
     font-weight: normal;
@@ -315,6 +321,7 @@ a:hover {
 }
 
 .pros__boat h3 {
+    margin-top: 0;
     margin-bottom: 10px;
 
     font-size: 18px;
@@ -323,7 +330,9 @@ a:hover {
 }
 
 .pros__boat p {
+    margin-top: 0;
     margin-right: 89px;
+    margin-bottom: 0;
 
     font-size: 14px;
     font-weight: normal;
@@ -367,6 +376,8 @@ a:hover {
 }
 
 .cruises__title h2 {
+    margin: 0;
+
     font-size: 28px;
     font-weight: 600;
     line-height: 150%;
@@ -396,11 +407,16 @@ a:hover {
 }
 
 .cruises__card-text h3 {
+    margin-top: 0;
     margin-bottom: 11px;
 
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
+}
+
+.cruises__card-text dl {
+    margin: 0;
 }
 
 .cruises__card-text dt {
@@ -413,6 +429,7 @@ a:hover {
 
 .cruises__card-text dd {
     margin-bottom: 11px;
+    margin-left: 0;
 
     font-size: 14px;
     font-weight: normal;
@@ -496,6 +513,7 @@ a:hover {
 }
 
 .booking__text h2 {
+    margin-top: 0;
     margin-bottom: 30px;
 
     font-size: 40px;
@@ -505,6 +523,7 @@ a:hover {
 
 .booking__text p {
     width: 352px;
+    margin: 0;
 
     font-size: 18px;
     font-weight: normal;
@@ -512,6 +531,7 @@ a:hover {
 }
 
 .booking__form p {
+    margin-top: 0;
     margin-bottom: 21px;
 
     color: #f9fbfd;
@@ -539,6 +559,7 @@ input[type="email"] {
 input[type="checkbox"] {
     width: 18px;
     height: 18px;
+    margin: 0;
 }
 
 input[type="submit"] {
@@ -554,7 +575,6 @@ input[placeholder] {
     display: flex;
     align-items: center;
 
-    margin-bottom: 30px;
     margin-bottom: 30px;
 
     color: #f9fbfd;
@@ -614,6 +634,10 @@ input[placeholder] {
     line-height: 150%;
 }
 
+.contacts__text-slogan p {
+    margin: 0;
+}
+
 .contacts__text-address {
     color: #011c40;
 
@@ -658,7 +682,7 @@ input[placeholder] {
 }
 
 .contacts__text-address p {
-    display: flex;
+    margin: 0;
 }
 
 .footer {
