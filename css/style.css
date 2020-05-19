@@ -549,6 +549,7 @@ input[type="email"] {
     margin-bottom: 20px;
 
     color: #011c40;
+    border: none;
     background-color: #f9fbfd;
 
     font-size: 14px;
@@ -570,6 +571,8 @@ input[type="submit"] {
     height: 43px;
 
     color: #011c40;
+    border: none;
+    background-color: #f9fbfd;
 
     font-size: 14px;
     font-weight: 600;
