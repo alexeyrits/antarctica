@@ -403,7 +403,7 @@ a:hover {
     line-height: 27px;
 }
 
-.cruises__card-text h4 {
+.cruises__card-text dt {
     margin-bottom: 1px;
 
     font-size: 14px;
@@ -411,16 +411,12 @@ a:hover {
     line-height: 20px;
 }
 
-.cruises__card-text p {
+.cruises__card-text dd {
     margin-bottom: 11px;
 
     font-size: 14px;
     font-weight: normal;
     line-height: 20px;
-}
-
-.cruises__card-text p:last-of-type {
-    margin-bottom: 21px;
 }
 
 .cruises__card:hover .cruises__card-text {
