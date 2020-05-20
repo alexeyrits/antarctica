@@ -244,7 +244,11 @@ a:hover {
     width: 27px;
     height: 32px;
 
-    content: url(../img/liner.svg);
+    content: "";
+
+    background-image: url(../img/liner.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .pros__liner h3 {
@@ -285,7 +289,11 @@ a:hover {
     width: 38px;
     height: 21px;
 
-    content: url(../img/checkbox.svg);
+    content: "";
+
+    background-image: url(../img/checkbox.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .pros__checkbox h3 {
@@ -326,7 +334,11 @@ a:hover {
     width: 42px;
     height: 15px;
 
-    content: url(../img/boat.svg);
+    content: "";
+
+    background-image: url(../img/boat.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .pros__boat h3 {
@@ -737,7 +749,11 @@ input[type="checkbox"]:not(:checked) + span::before {
     width: 18px;
     height: 22px;
 
-    content: url(../img/marker.svg);
+    content: "";
+
+    background-image: url(../img/marker.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .contacts__text-address_phone {
@@ -754,7 +770,11 @@ input[type="checkbox"]:not(:checked) + span::before {
     width: 18px;
     height: 18px;
 
-    content: url(../img/phone.svg);
+    content: "";
+
+    background-image: url(../img/phone.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .contacts__text-address a {
@@ -801,7 +821,11 @@ input[type="checkbox"]:not(:checked) + span::before {
     width: 11px;
     height: 28px;
 
-    content: url(../img/facebook.svg);
+    content: "";
+
+    background-image: url(../img/facebook.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .navbar .navbar__social-inst::before {
@@ -812,7 +836,11 @@ input[type="checkbox"]:not(:checked) + span::before {
     width: 20px;
     height: 20px;
 
-    content: url(../img/instagram.svg);
+    content: "";
+
+    background-image: url(../img/instagram.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .navbar .navbar__social-tw::before {
@@ -823,5 +851,9 @@ input[type="checkbox"]:not(:checked) + span::before {
     width: 20px;
     height: 16px;
 
-    content: url(../img/twitter.svg);
+    content: "";
+
+    background-image: url(../img/twitter.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
