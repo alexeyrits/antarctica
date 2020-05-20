@@ -587,6 +587,8 @@ input[type="submit"] {
     width: 303px;
     height: 43px;
 
+    cursor: pointer;
+
     color: #011c40;
     border: none;
     background-color: #f9fbfd;
@@ -612,6 +614,8 @@ input[type="checkbox"] {
     margin-bottom: 32px;
     padding-top: 3px;
     padding-left: 23px;
+
+    cursor: pointer;
 
     color: #f9fbfd;
 
