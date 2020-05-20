@@ -616,11 +616,11 @@ input[type="checkbox"] {
     left: -9999px;
 }
 
-.checkbox {
+.agree {
     position: relative;
 }
 
-.checkbox span {
+.agree span {
     display: flex;
 
     margin-bottom: 32px;
@@ -636,7 +636,7 @@ input[type="checkbox"] {
     line-height: 130%;
 }
 
-.checkbox span::after {
+.agree span::after {
     position: absolute;
     top: -1px;
     left: -1px;
@@ -650,7 +650,7 @@ input[type="checkbox"] {
     background: #f9fbfd;
 }
 
-.checkbox span::before {
+.agree span::before {
     position: absolute;
     z-index: 1;
     top: 5px;
