@@ -146,15 +146,15 @@ a:hover {
     display: flex;
     align-items: center;
 
-    height: 541px;
+    min-height: 541px;
 }
 
 .trip__content {
     display: flex;
     align-items: center;
 
-    width: 100%px;
-    height: 301px;
+    width: 100%;
+    min-height: 301px;
     margin: 0 auto;
 }
 
@@ -191,7 +191,7 @@ a:hover {
     justify-content: center;
 
     width: 100%;
-    height: 562px;
+    min-height: 562px;
 
     background-color: #e3ecf6;
     background-image: url(..//img/pros.png);
@@ -205,13 +205,16 @@ a:hover {
     justify-content: space-between;
 
     width: 100%;
-    height: 322px;
+    min-height: 362px;
+    padding-top: 20px;
 
     color: #011c40;
 }
 
 .pros__title {
     align-self: center;
+
+    margin-bottom: 20px;
 }
 
 .pros__title h2 {
@@ -225,14 +228,17 @@ a:hover {
 .pros__text {
     display: flex;
     justify-content: space-between;
+
+    margin-bottom: 20px;
 }
 
 .pros__liner {
     position: relative;
 
     width: 360px;
-    height: 241px;
+    min-height: 241px;
     padding-top: 81px;
+    padding-bottom: 20px;
     padding-left: 30px;
 
     background-color: #f9fbfd;
@@ -278,8 +284,9 @@ a:hover {
     position: relative;
 
     width: 360px;
-    height: 241px;
+    min-height: 241px;
     padding-top: 82px;
+    padding-bottom: 20px;
     padding-left: 30px;
 
     background-color: #f9fbfd;
@@ -323,8 +330,9 @@ a:hover {
     position: relative;
 
     width: 360px;
-    height: 241px;
+    min-height: 241px;
     padding-top: 82px;
+    padding-bottom: 20px;
     padding-left: 30px;
 
     background-color: #f9fbfd;
@@ -370,7 +378,8 @@ a:hover {
     justify-content: center;
 
     width: 100%;
-    height: 1123px;
+    min-height: 1123px;
+    padding: 20px 0;
 }
 
 .cruises__content {
@@ -380,7 +389,7 @@ a:hover {
     justify-content: space-between;
 
     width: 1130px;
-    height: 883px;
+    min-height: 883px;
     margin-left: 15px;
 }
 
@@ -391,12 +400,12 @@ a:hover {
     justify-content: space-between;
 
     width: 100%;
-    height: 862px;
+    min-height: 862px;
 }
 
 .cruises__card {
     width: 260px;
-    height: 386px;
+    min-height: 386px;
     margin-top: 30px;
 }
 
@@ -424,8 +433,7 @@ a:hover {
     display: none;
 
     height: 100%;
-    padding-top: 29px;
-    padding-left: 25px;
+    padding: 29px 25px 60px;
 
     color: #f9fbfd;
     background-color: #011c40;
@@ -490,7 +498,8 @@ a:hover {
     justify-content: center;
 
     width: 210px;
-    height: 40px;
+    min-height: 40px;
+    padding: 0 10px;
 
     text-decoration: none;
 
@@ -507,7 +516,8 @@ a:hover {
     align-items: center;
 
     width: 100%;
-    height: 555px;
+    min-height: 555px;
+    padding: 20px;
 
     background-color: #0b76f1;
     background-image: url(..//img/booking.png);
@@ -522,7 +532,7 @@ a:hover {
     justify-content: space-between;
 
     width: 100%;
-    height: 455px;
+    min-height: 455px;
     padding: 0 60px;
 }
 
@@ -531,7 +541,7 @@ a:hover {
     flex-direction: column;
 
     width: 403px;
-    height: 455px;
+    min-height: 455px;
     padding-top: 45px;
     padding-right: 50px;
     padding-left: 50px;
@@ -601,9 +611,11 @@ input::placeholder {
 
 input[type="submit"] {
     width: 303px;
-    height: 43px;
+    min-height: 43px;
+    padding: 0 40px;
 
     cursor: pointer;
+    white-space: pre-line;
 
     color: #011c40;
     border: none;
@@ -680,7 +692,8 @@ input[type="checkbox"]:not(:checked) + span::before {
     justify-content: center;
 
     width: 100%;
-    height: 546px;
+    min-height: 546px;
+    padding: 20px 0;
 }
 
 .contacts__content {
@@ -688,7 +701,7 @@ input[type="checkbox"]:not(:checked) + span::before {
     justify-content: space-between;
 
     width: 100%;
-    height: 306px;
+    min-height: 306px;
 }
 
 .contacts__map {
@@ -709,7 +722,7 @@ input[type="checkbox"]:not(:checked) + span::before {
 
 .contacts__text {
     width: 600px;
-    height: 306px;
+    min-height: 306px;
     padding-top: 75px;
     padding-left: 100px;
 }
@@ -799,13 +812,14 @@ input[type="checkbox"]:not(:checked) + span::before {
 
     width: 100%;
     height: 138px;
+    padding: 20px;
 
     background-color: #011c40;
 }
 
 .footer .navbar__menu {
     margin-right: auto;
-    padding-top: 3px;
+    padding-top: 9px;
     padding-left: 0;
 }
 
@@ -814,6 +828,8 @@ input[type="checkbox"]:not(:checked) + span::before {
 }
 
 .navbar__social {
+    padding-left: 100px;
+
     list-style-type: none;
 }
 
