@@ -68,6 +68,8 @@ a:hover {
 
 .container {
     width: 87.85%;
+    min-width: 910px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
