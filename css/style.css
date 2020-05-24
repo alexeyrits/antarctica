@@ -509,7 +509,7 @@ body {
 
     width: 210px;
     min-height: 40px;
-    padding: 0 10px;
+    padding: 9px 10px;
 
     text-decoration: none;
 
@@ -602,10 +602,10 @@ input[type="email"] {
     width: 303px;
     height: 43px;
     margin-bottom: 20px;
-    padding-left: 16px;
+    padding-left: 15px;
 
     color: #011c40;
-    border: none;
+    border: solid 1px #f9fbfd;
     background-color: #f9fbfd;
 
     font-family: "Montserrat", Arial, sans-serif;
@@ -617,13 +617,13 @@ input[type="email"] {
 input[type="text"]:hover,
 input[type="tel"]:hover,
 input[type="email"]:hover {
-    border: solid 2px red;
+    border-color: red;
 }
 
 input[type="text"]:focus,
 input[type="tel"]:focus,
 input[type="email"]:focus {
-    border: solid 2px green;
+    border-color: green;
 }
 
 input::placeholder {
