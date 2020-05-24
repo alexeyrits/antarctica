@@ -58,14 +58,6 @@ body {
     background-size: cover;
 }
 
-a {
-    opacity: 0.5;
-}
-
-a:hover {
-    opacity: 1;
-}
-
 .container {
     width: 87.85%;
     min-width: 970px;
@@ -93,7 +85,13 @@ a:hover {
     height: 38px;
     margin-right: 70px;
 
+    opacity: 1;
+
     font-size: 0;
+}
+
+.navbar__logo:hover {
+    opacity: 0.5;
 }
 
 .navbar__menu {
@@ -123,7 +121,12 @@ a:hover {
 .navbar__menu-link {
     text-decoration: none;
 
+    opacity: 1;
     color: white;
+}
+
+.navbar__menu-link:hover {
+    opacity: 0.5;
 }
 
 .navbar__menu-item:last-child {
@@ -509,12 +512,17 @@ a:hover {
 
     text-decoration: none;
 
+    opacity: 1;
     color: #011c40;
     background-color: #f9fbfd;
 
     font-size: 14px;
     font-weight: 600;
     line-height: 150%;
+}
+
+.cruises__link:hover {
+    opacity: 0.5;
 }
 
 .booking {
@@ -820,6 +828,10 @@ input[type="checkbox"]:not(:checked) + span::before {
     line-height: 150%;
 }
 
+.contacts__text-address a:hover {
+    opacity: 0.5;
+}
+
 .footer {
     display: flex;
 
@@ -846,6 +858,14 @@ input[type="checkbox"]:not(:checked) + span::before {
     list-style-type: none;
 }
 
+.navbar__social-fb {
+    opacity: 1;
+}
+
+.navbar__social-fb:hover {
+    opacity: 0.5;
+}
+
 .navbar .navbar__social-fb::before {
     position: absolute;
     top: 10px;
@@ -861,6 +881,14 @@ input[type="checkbox"]:not(:checked) + span::before {
     background-size: contain;
 }
 
+.navbar__social-inst {
+    opacity: 1;
+}
+
+.navbar__social-inst:hover {
+    opacity: 0.5;
+}
+
 .navbar .navbar__social-inst::before {
     position: absolute;
     top: 10px;
@@ -874,6 +902,14 @@ input[type="checkbox"]:not(:checked) + span::before {
     background-image: url(../img/instagram.svg);
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.navbar__social-tw {
+    opacity: 1;
+}
+
+.navbar__social-tw:hover {
+    opacity: 0.5;
 }
 
 .navbar .navbar__social-tw::before {
