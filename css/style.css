@@ -556,9 +556,7 @@ body {
 
     width: 403px;
     min-height: 455px;
-    padding-top: 45px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding: 45px 50px;
 
     background-color: #011c40;
 }
