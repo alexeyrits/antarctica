@@ -71,11 +71,10 @@ body {
     position: relative;
 
     display: flex;
-    align-items: center;
     justify-content: space-between;
 
     width: 100%;
-    height: 38px;
+    min-height: 38px;
     margin: 0 auto;
 
     color: #f9fbfd;
@@ -115,7 +114,7 @@ body {
 }
 
 .header__text {
-    margin-top: 196px;
+    margin-top: 194px;
     margin-left: 95px;
 }
 
@@ -135,7 +134,7 @@ body {
 }
 
 .header__text h1 {
-    margin-bottom: 12px;
+    margin-bottom: 13px;
 
     font-size: 54px;
     line-height: 66px;
@@ -381,6 +380,10 @@ body {
     font-size: 14px;
     font-weight: normal;
     line-height: 20px;
+}
+
+.boat__indent {
+    margin-right: 30px;
 }
 
 .cruises {
@@ -843,7 +846,7 @@ input[type="checkbox"]:not(:checked) + span::before {
 
 .footer .navbar__menu {
     margin-right: auto;
-    padding-top: 9px;
+    padding-top: 6px;
     padding-left: 0;
 }
 
@@ -852,9 +855,26 @@ input[type="checkbox"]:not(:checked) + span::before {
 }
 
 .navbar__social {
-    padding-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 118px;
+    min-height: 38px;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
 
     list-style-type: none;
+}
+
+.navbar__social-item a {
+    display: inline-block;
+}
+
+.navbar__social-item:last-child {
+    margin-right: 0;
 }
 
 .navbar__social-fb {
@@ -866,9 +886,7 @@ input[type="checkbox"]:not(:checked) + span::before {
 }
 
 .navbar .navbar__social-fb::before {
-    position: absolute;
-    top: 10px;
-    right: 106px;
+    display: block;
 
     width: 11px;
     height: 28px;
@@ -889,9 +907,7 @@ input[type="checkbox"]:not(:checked) + span::before {
 }
 
 .navbar .navbar__social-inst::before {
-    position: absolute;
-    top: 10px;
-    right: 53px;
+    display: block;
 
     width: 20px;
     height: 20px;
@@ -912,9 +928,10 @@ input[type="checkbox"]:not(:checked) + span::before {
 }
 
 .navbar .navbar__social-tw::before {
-    position: absolute;
     top: 11px;
     right: 0;
+
+    display: block;
 
     width: 20px;
     height: 16px;
@@ -954,6 +971,7 @@ input[type="checkbox"]:not(:checked) + span::before {
     }
 
     .navbar__menu {
+        margin-top: -3px;
         padding: 0;
         padding-bottom: 5px;
     }
@@ -967,7 +985,7 @@ input[type="checkbox"]:not(:checked) + span::before {
     }
 
     .header__text {
-        margin-top: 218px;
+        margin-top: 200px;
         margin-left: 0;
     }
 
@@ -1113,6 +1131,10 @@ input[type="checkbox"]:not(:checked) + span::before {
 
     .pros__boat p {
         margin-right: 19px;
+    }
+
+    .boat__indent {
+        margin-right: 0;
     }
 
     .cruises {
@@ -1263,6 +1285,16 @@ input[type="checkbox"]:not(:checked) + span::before {
 
     .footer .navbar__logo {
         margin-right: 25px;
+    }
+
+    .navbar__social {
+        width: 87px;
+        padding-top: 3px;
+        padding-bottom: 15px;
+    }
+
+    .navbar__social-item a {
+        height: 20px;
     }
 
     .navbar .navbar__social-fb::before {
