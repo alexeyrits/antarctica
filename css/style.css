@@ -608,6 +608,7 @@ input[type="email"] {
 
     color: #011c40;
     border: solid 1px #f9fbfd;
+    outline: none;
     background-color: #f9fbfd;
 
     font-family: "Montserrat", Arial, sans-serif;
@@ -647,6 +648,7 @@ input[type="submit"] {
 
     color: #011c40;
     border: none;
+    outline: none;
     background-color: #f9fbfd;
 
     font-family: "Montserrat", Arial, sans-serif;
