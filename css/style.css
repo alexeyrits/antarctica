@@ -90,8 +90,22 @@ body {
     font-size: 0;
 }
 
-.navbar__logo:hover {
-    opacity: 0.5;
+.navbar__logo::before {
+    position: absolute;
+
+    width: 70px;
+    height: 38px;
+
+    content: "";
+
+    background-image: url(../img/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.navbar input,
+.navbar label {
+    display: none;
 }
 
 .navbar__menu {
@@ -569,6 +583,10 @@ body {
     color: #011c40;
 }
 
+.port {
+    display: none;
+}
+
 .booking__text h2 {
     margin-top: 0;
     margin-bottom: 15px;
@@ -807,6 +825,10 @@ input[type="checkbox"]:not(:checked) + span::before {
     padding-left: 28px;
 }
 
+.contacts__text-address_phone a {
+    text-decoration: none;
+}
+
 .contacts__text-address_phone::before {
     position: absolute;
     top: 1px;
@@ -968,7 +990,7 @@ input[type="checkbox"]:not(:checked) + span::before {
         height: 20px;
     }
 
-    .navbar__logo img {
+    .navbar__logo::before {
         width: 38px;
         height: 20px;
     }
@@ -1232,6 +1254,10 @@ input[type="checkbox"]:not(:checked) + span::before {
         text-align: center;
     }
 
+    .port {
+        display: none;
+    }
+
     .contacts {
         min-height: 534px;
         padding: 99px 0;
@@ -1331,5 +1357,547 @@ input[type="checkbox"]:not(:checked) + span::before {
     .footer .navbar__menu {
         padding: 0;
         padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        min-height: 500px;
+        padding-top: 20px;
+
+        background-image: url(..//img/header_xs.png);
+    }
+
+    .container {
+        width: 96.88%;
+        min-width: 0;
+        padding: 0 10px;
+    }
+
+    .header .navbar {
+        justify-content: flex-end;
+
+        min-height: 22px;
+    }
+
+    .header .navbar__logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 42px;
+        height: 22px;
+        margin: 0;
+    }
+
+    .header .navbar__logo::before {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+
+        width: 42px;
+        height: 22px;
+
+        content: "";
+
+        background-image: url(../img/logo-black.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .navbar__checkbox:not(:checked) ~ .navbar__logo::before {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+
+        width: 42px;
+        height: 22px;
+
+        content: "";
+
+        background-image: url(../img/logo.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .navbar input {
+        display: inline-block;
+    }
+
+    .navbar .burger {
+        position: relative;
+        z-index: 1;
+
+        display: inline-block;
+
+        width: 24px;
+        height: 21px;
+
+        cursor: pointer;
+    }
+
+    .burger span {
+        position: absolute;
+        z-index: 2;
+        top: 10px;
+        right: 0;
+
+        display: inline-block;
+
+        width: 24px;
+        height: 2px;
+
+        background-color: white;
+    }
+
+    .burger span::before {
+        position: absolute;
+        top: -6px;
+        left: 0;
+
+        display: block;
+
+        width: 24px;
+        height: 2px;
+
+        content: "";
+
+        background-color: white;
+    }
+
+    .burger span::after {
+        position: absolute;
+        top: 6px;
+        left: 0;
+
+        display: block;
+
+        width: 24px;
+        height: 2px;
+
+        content: "";
+
+        background-color: white;
+    }
+
+    .navbar__checkbox:checked ~ .burger span {
+        height: 0;
+    }
+
+    .navbar__checkbox:checked ~ .burger span::before {
+        top: 0;
+        left: 8px;
+
+        width: 19px;
+
+        transform: rotate(45deg);
+
+        background-color: #011c40;
+    }
+
+    .navbar__checkbox:checked ~ .burger span::after {
+        top: 0;
+        left: 8px;
+
+        width: 19px;
+
+        transform: rotate(-45deg);
+
+        background-color: #011c40;
+    }
+
+    .header .navbar__menu {
+        position: absolute;
+        top: -20px;
+        left: -15px;
+
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        width: 320px;
+        height: 299px;
+        margin: 0;
+        padding-top: 93px;
+        padding-left: 15px;
+
+        background-color: white;
+    }
+
+    .header .navbar__menu-item {
+        margin: 0;
+        margin-bottom: 30px;
+
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 13px;
+    }
+
+    .header .navbar__menu-item:nth-child(2) {
+        order: -1;
+    }
+
+    .header .navbar__menu-link {
+        color: #011c40;
+    }
+
+    .navbar__checkbox:checked ~ .navbar__menu {
+        display: flex;
+    }
+
+    .navbar__checkbox:not(:checked) ~ .navbar__menu {
+        display: none;
+    }
+
+    .header__text {
+        margin-top: 135px;
+    }
+
+    .header__text h1 {
+        margin-bottom: 10px;
+
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 45px;
+    }
+
+    .header__text p {
+        margin-right: 60px;
+        margin-right: 50px;
+
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 22px;
+    }
+
+    .trip {
+        padding: 65px 0;
+    }
+
+    .trip__content {
+        flex-direction: column;
+    }
+
+    .trip__text {
+        width: 100%;
+        margin-top: -8px;
+        margin-bottom: 33px;
+    }
+
+    .trip__text h2 {
+        margin-right: 95px;
+        margin-bottom: 15px;
+
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 34px;
+    }
+
+    .trip__text p {
+        margin-right: 0;
+
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 24px;
+    }
+
+    .trip__photo {
+        width: 100%;
+        height: 186px;
+    }
+
+    .pros {
+        padding: 65px 0;
+    }
+
+    .pros__title {
+        margin-bottom: 38px;
+    }
+
+    .pros__title h2 {
+        margin: 0;
+
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    .pros__text {
+        flex-direction: column;
+    }
+
+    .pros__liner {
+        width: 290px;
+        min-height: 249px;
+        margin-bottom: 30px;
+        padding-top: 72px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    .pros__liner::before {
+        top: 26px;
+    }
+
+    .pros__liner h3 {
+        margin-bottom: 8px;
+    }
+
+    .pros__liner p {
+        margin-right: 23px;
+    }
+
+    .pros__checkbox {
+        width: 290px;
+        min-height: 249px;
+        margin-bottom: 30px;
+        padding-top: 70px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    .pros__checkbox::before {
+        top: 28px;
+    }
+
+    .pros__checkbox h3 {
+        margin-right: 60px;
+    }
+
+    .pros__boat {
+        width: 290px;
+        min-height: 249px;
+        padding-top: 71px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    .pros__boat h3 {
+        margin-right: 50px;
+    }
+
+    .boat__indent {
+        margin-right: 40px;
+    }
+
+    .boat__indent2 {
+        margin-right: 25px;
+    }
+
+    .boat__indent3 {
+        margin-right: 4px;
+    }
+
+    .cruises {
+        padding: 65px 0;
+    }
+
+    .cruises__title {
+        margin-bottom: 38px;
+    }
+
+    .cruises__title h2 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    .cruises__cards {
+        justify-content: space-around;
+
+        margin: 0;
+    }
+
+    .cruises__card-photo img {
+        width: 270px;
+    }
+
+    .cruises__card {
+        width: 270px;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .cruises__card:last-child {
+        margin-bottom: 0;
+    }
+
+    .cruises__card-text {
+        padding-top: 34px;
+        padding-left: 25px;
+    }
+
+    .cruises__card-text h3 {
+        margin-bottom: 18px;
+    }
+
+    .cruises__card-title {
+        bottom: 17px;
+        left: 25px;
+    }
+
+    .cruises__link {
+        width: 220px;
+        height: 40px;
+    }
+
+    .booking {
+        min-height: 760px;
+        padding: 65px 0;
+    }
+
+    .booking__text {
+        margin-bottom: 34px;
+    }
+
+    .booking__text h2 {
+        margin-top: -6px;
+        margin-bottom: 14px;
+
+        text-align: center;
+
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 31px;
+    }
+
+    .booking__text p {
+        width: 100%;
+        padding-right: 12px;
+        padding-left: 13px;
+
+        text-align: center;
+
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 22px;
+    }
+
+    .port {
+        display: block;
+    }
+
+    .booking__indent {
+        margin-right: 10px;
+    }
+
+    .booking__form {
+        width: 290px;
+        min-height: 460px;
+        padding-top: 35px;
+        padding-right: 30px;
+        padding-bottom: 35px;
+        padding-left: 30px;
+    }
+
+    .booking__form p {
+        margin-bottom: 28px;
+
+        text-align: center;
+
+        line-height: 25px;
+    }
+    .form input {
+        width: 230px;
+        min-height: 43px;
+        margin-bottom: 20px;
+        padding-top: 2px;
+    }
+
+    .form input[type="submit"] {
+        margin-bottom: 0;
+    }
+
+    .agree span {
+        margin-top: -2px;
+        margin-right: 50px;
+        margin-bottom: 28px;
+        padding-top: 0;
+        padding-left: 28px;
+
+        line-height: 120%;
+    }
+
+    .agree span::before {
+        top: 6px;
+        left: 4px;
+    }
+
+    .agree span::after {
+        top: 0;
+        left: 0;
+    }
+
+    input[tupe="submit"] {
+        padding-top: 0;
+    }
+
+    .contacts {
+        padding: 65px 0;
+    }
+
+    .contacts__content {
+        flex-direction: column-reverse;
+    }
+
+    .contacts__text {
+        width: 290px;
+        min-height: 257px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .contacts__text-slogan {
+        margin-bottom: 28px;
+    }
+
+    .contacts__text-slogan p {
+        margin-top: -7px;
+    }
+
+    .contacts__map {
+        width: 290px;
+        height: 316px;
+    }
+
+    .contacts__map .map-hpoto {
+        width: 290px;
+        height: 316px;
+    }
+
+    .contacts__map-marker {
+        right: 160px;
+        bottom: 70px;
+    }
+
+    .footer {
+        min-height: 283px;
+        padding: 40px 0;
+    }
+
+    .footer .navbar {
+        flex-direction: column;
+    }
+
+    .footer .navbar__logo::before {
+        width: 42px;
+        height: 22px;
+    }
+
+    .footer .navbar__menu {
+        flex-direction: column;
+
+        margin-top: 49px;
+    }
+
+    .navbar__menu-item {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .navbar__menu-item:last-child {
+        margin-bottom: 18px;
     }
 }

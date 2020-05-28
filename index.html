@@ -13,9 +13,11 @@
         <div class="container">
 
             <nav class="navbar">
-                <a class="navbar__logo">
-                    <img src="img/logo.svg" alt="логотип" width="70" height="38">
-                </a>
+                <input class="navbar__checkbox" type="checkbox" id="burger">
+                <label class="burger" for="burger">
+                    <span></span>
+                </label>
+                <a class="navbar__logo"></a>
                 <ul class="navbar__menu">
                     <li class="navbar__menu-item">
                         <a class="navbar__menu-link" href="#">Преимущества</a>
@@ -35,8 +37,8 @@
                 </ul>
             </nav>
             <div class="header__text">
-                <h1>Круизы в Антарктику</h1>
-                <p>Волшебный мир айсбергов и пингвинов</p>
+                <h1>Круизы в&nbsp;Антарктику</h1>
+                <p>Волшебный мир айсбергов&nbsp;и пингвинов</p>
             </div>
         </div>
     </header>
@@ -55,6 +57,7 @@
                     </div>
                     <div class="trip__photo">
                         <picture>
+                            <source media="(max-width: 767px)" srcset="img/penguins_xs.png">
                             <source media="(max-width: 1023px)" srcset="img/penguins_md.png">
                             <img src="img/penguins.png" alt="пингвины" width="560">
                         </picture>
@@ -70,23 +73,24 @@
                     </div>
                     <div class="pros__text">
                         <div class="pros__liner">
-                            <h3>Небольшой круизный лайнер</h3>
+                            <h3>Небольшой круизный&nbsp;лайнер</h3>
                             <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей,
-                                поможет избежать шума и очередей и&nbsp;даст возможность
+                                поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность
                                 насладиться видами и природой. </p>
                         </div>
                         <div class="pros__checkbox">
                             <h3>Система все&nbsp;включено</h3>
                             <p>Все наши круизы работают по&nbsp;системе "Все Включено".
-                                Великолепные блюда и безлимитный бар доступны для
+                                Великолепные блюда и&nbsp;безлимитный бар доступны для
                                 вас 24&nbsp;часа.
                             </p>
                         </div>
                         <div class="pros__boat">
-                            <h3>Экскурсионные туры на Zodiac</h3>
+                            <h3>Экскурсионные туры&nbsp;на Zodiac</h3>
                             <p>Экскурсионные туры к&nbsp;берегам Антарктиды <span
-                                    class="boat__indent">совершаются</span> на оборудованных лодках
-                                типа Zodiac в&nbsp;сопровождении
+                                    class="boat__indent">совершаются</span> на оборудованных <span
+                                    class="boat__indent2">лодках</span>
+                                типа <span class="boat__indent3">Zodiac</span> в&nbsp;сопровождении
                                 опытных экскурсоводов.
                             </p>
                         </div>
@@ -104,6 +108,7 @@
                         <div class="cruises__card">
                             <div class="cruises__card-photo">
                                 <picture>
+                                    <source media="(max-width: 767px)" srcset="img/astoria-cruise_xs.png">
                                     <source media="(max-width: 1023px)" srcset="img/astoria-cruise_md.png">
                                     <img src="img/astoria-cruise.png" alt="пингвины" width="260">
                                 </picture>
@@ -129,6 +134,7 @@
                         <div class="cruises__card">
                             <div class="cruises__card-photo">
                                 <picture>
+                                    <source media="(max-width: 767px)" srcset="img/eline-cruise_xs.png">
                                     <source media="(max-width: 1023px)" srcset="img/eline-cruise_md.png">
                                     <img src="img/eline-cruise.png" alt="пингвины" width="260">
                                 </picture>
@@ -154,6 +160,7 @@
                         <div class="cruises__card">
                             <div class="cruises__card-photo">
                                 <picture>
+                                    <source media="(max-width: 767px)" srcset="img/atlantis-cruise_xs.png">
                                     <source media="(max-width: 1023px)" srcset="img/atlantis-cruise_md.png">
                                     <img src="img/atlantis-cruise.png" alt="пингвины" width="260">
                                 </picture>
@@ -179,6 +186,7 @@
                         <div class="cruises__card">
                             <div class="cruises__card-photo">
                                 <picture>
+                                    <source media="(max-width: 767px)" srcset="img/odyssey-cruise_xs.png">
                                     <source media="(max-width: 1023px)" srcset="img/odyssey-cruise_md.png">
                                     <img src="img/odyssey-cruise.png" alt="пингвины" width="260">
                                 </picture>
@@ -204,6 +212,7 @@
                         <div class="cruises__card">
                             <div class="cruises__card-photo">
                                 <picture>
+                                    <source media="(max-width: 767px)" srcset="img/olympia-cruise_xs.png">
                                     <source media="(max-width: 1023px)" srcset="img/olympia-cruise_md.png">
                                     <img src="img/olympia-cruise.png" alt="пингвины" width="260">
                                 </picture>
@@ -231,6 +240,7 @@
                         <div class="cruises__card">
                             <div class="cruises__card-photo">
                                 <picture>
+                                    <source media="(max-width: 767px)" srcset="img/aurora-cruise_xs.png">
                                     <source media="(max-width: 1023px)" srcset="img/aurora-cruise_md.png">
                                     <img src="img/aurora-cruise.png" alt="пингвины" width="260">
                                 </picture>
@@ -256,6 +266,7 @@
                         <div class="cruises__card">
                             <div class="cruises__card-photo">
                                 <picture>
+                                    <source media="(max-width: 767px)" srcset="img/leonor-cruise_xs.png">
                                     <source media="(max-width: 1023px)" srcset="img/leonor-cruise_md.png">
                                     <img src="img/leonor-cruise.png" alt="пингвины" width="260">
                                 </picture>
@@ -281,6 +292,7 @@
                         <div class="cruises__card">
                             <div class="cruises__card-photo">
                                 <picture>
+                                    <source media="(max-width: 767px)" srcset="img/minion1-cruise_xs.png">
                                     <source media="(max-width: 1023px)" srcset="img/minion1-cruise_md.png">
                                     <img src="img/minion1-cruise.png" alt="пингвины" width="260">
                                 </picture>
@@ -312,12 +324,14 @@
                 <div class="booking__content">
                     <div class="booking__text">
                         <h2>Раннее бронирование</h2>
-                        <p>Забронируйте тур за 3-6 месяцев до&nbsp;даты выезда и сэкономьте
+                        <p>Забронируйте тур <br class="port">за&nbsp;3-6&nbsp;месяцев
+                            до&nbsp;даты&nbsp;выезда
+                            и&nbsp;сэкономьте
                             до 50%
                         </p>
                     </div>
                     <div class="booking__form">
-                        <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+                        <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</p>
                         <form class="form" action="https://echo.htmlacademy.ru">
                             <input type="text" name="name" placeholder="Валерия">
                             <input type="tel" name="tel" pattern="8{1}[0-9]{10}" placeholder="89236889975">
@@ -338,6 +352,7 @@
                 <div class="contacts__content">
                     <div class="contacts__map">
                         <picture>
+                            <source media="(max-width: 767px)" srcset="img/map_xs.png">
                             <source media="(max-width: 1023px)" srcset="img/map_md.png">
                             <img class="map-hpoto" src="img/map.png" alt="пингвины" width="560">
                         </picture>
@@ -346,7 +361,7 @@
                     <div class="contacts__text">
                         <div class="contacts__text-slogan">
                             <p>У вас ещё остались вопросы или сомнения?
-                                Приезжайте к нам в&nbsp;офис и мы вам все расскажем.
+                                Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.
                             </p>
                         </div>
                         <div class="contacts__text-address">
@@ -366,9 +381,7 @@
     <footer class="footer">
         <div class="container">
             <nav class="navbar">
-                <a class="navbar__logo">
-                    <img src="img/logo.svg" alt="логотип" width="70" height="38">
-                </a>
+                <a class="navbar__logo"></a>
                 <ul class="navbar__menu">
                     <li class="navbar__menu-item">
                         <a class="navbar__menu-link" href="#">Преимущества</a>
