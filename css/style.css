@@ -1688,7 +1688,8 @@ input[type="checkbox"]:not(:checked) + span::before {
     }
 
     .cruises {
-        padding: 65px 0;
+        padding-top: 65px;
+        padding-bottom: 35px;
     }
 
     .cruises__title {
@@ -1718,10 +1719,6 @@ input[type="checkbox"]:not(:checked) + span::before {
         margin-right: 5px;
         margin-bottom: 30px;
         margin-left: 5px;
-    }
-
-    .cruises__card:last-child {
-        margin-bottom: 0;
     }
 
     .cruises__card-text {
