@@ -68,8 +68,6 @@ body {
 }
 
 .navbar {
-    position: relative;
-
     display: flex;
     justify-content: space-between;
 
@@ -88,19 +86,6 @@ body {
     opacity: 1;
 
     font-size: 0;
-}
-
-.navbar__logo::before {
-    position: absolute;
-
-    width: 70px;
-    height: 38px;
-
-    content: "";
-
-    background-image: url(../img/logo.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 .navbar input,
@@ -205,7 +190,6 @@ body {
 }
 
 .trip__photo img {
-    /* min-width: 560px; */
     max-width: 100%;
     max-height: 100%;
 }
@@ -260,7 +244,7 @@ body {
 .pros__liner {
     position: relative;
 
-    width: 360px;
+    width: 31.03%;
     min-height: 241px;
     padding-top: 81px;
     padding-bottom: 20px;
@@ -308,7 +292,7 @@ body {
 .pros__checkbox {
     position: relative;
 
-    width: 360px;
+    width: 31.03%;
     min-height: 241px;
     padding-top: 82px;
     padding-bottom: 20px;
@@ -354,7 +338,7 @@ body {
 .pros__boat {
     position: relative;
 
-    width: 360px;
+    width: 31.03%;
     min-height: 241px;
     padding-top: 82px;
     padding-bottom: 20px;
@@ -423,7 +407,7 @@ body {
     display: flex;
     align-content: flex-end;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
 
     width: 100%;
     min-height: 862px;
@@ -750,6 +734,16 @@ input[type="checkbox"]:not(:checked) + span::before {
     min-height: 306px;
 }
 
+.visually-hidden {
+    position: absolute;
+
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 .contacts__map {
     position: relative;
 
@@ -990,6 +984,11 @@ input[type="checkbox"]:not(:checked) + span::before {
         height: 20px;
     }
 
+    .navbar__logo img {
+        width: 38px;
+        height: 20px;
+    }
+
     .navbar__logo::before {
         width: 38px;
         height: 20px;
@@ -1031,6 +1030,7 @@ input[type="checkbox"]:not(:checked) + span::before {
 
     .trip__content {
         align-items: center;
+        justify-content: center;
 
         min-height: 264px;
     }
@@ -1056,9 +1056,9 @@ input[type="checkbox"]:not(:checked) + span::before {
         line-height: 24px;
     }
 
-    .trip__photo {
-        width: 324px;
-        height: 264px;
+    .trip__photo img {
+        width: 100%;
+        height: 100%;
     }
 
     .pros {
@@ -1382,15 +1382,20 @@ input[type="checkbox"]:not(:checked) + span::before {
 
     .header .navbar__logo {
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 20px;
+        left: 15px;
 
         width: 42px;
         height: 22px;
         margin: 0;
     }
 
-    .header .navbar__logo::before {
+    .navbar__logo img {
+        width: 42px;
+        height: 22px;
+    }
+
+    .header .navbar__checkbox:checked ~ .navbar__logo::before {
         position: absolute;
         z-index: 1;
         top: 0;
@@ -1402,22 +1407,6 @@ input[type="checkbox"]:not(:checked) + span::before {
         content: "";
 
         background-image: url(../img/logo-black.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-
-    .navbar__checkbox:not(:checked) ~ .navbar__logo::before {
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-
-        width: 42px;
-        height: 22px;
-
-        content: "";
-
-        background-image: url(../img/logo.svg);
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -1510,13 +1499,13 @@ input[type="checkbox"]:not(:checked) + span::before {
 
     .header .navbar__menu {
         position: absolute;
-        top: -20px;
-        left: -15px;
+        top: 0;
+        left: 0;
 
         flex-direction: column;
         flex-wrap: nowrap;
 
-        width: 320px;
+        width: 100vw;
         height: 299px;
         margin: 0;
         padding-top: 93px;
@@ -1604,11 +1593,20 @@ input[type="checkbox"]:not(:checked) + span::before {
 
     .trip__photo {
         width: 100%;
-        height: 186px;
+        height: 100%;
+    }
+
+    .trip__photo img {
+        width: 100%;
+        height: 100%;
     }
 
     .pros {
         padding: 65px 0;
+    }
+
+    .pros__content {
+        align-items: center;
     }
 
     .pros__title {
@@ -1717,7 +1715,9 @@ input[type="checkbox"]:not(:checked) + span::before {
         width: 270px;
         margin-top: 0;
         margin-right: 0;
+        margin-right: 5px;
         margin-bottom: 30px;
+        margin-left: 5px;
     }
 
     .cruises__card:last-child {
@@ -1839,6 +1839,7 @@ input[type="checkbox"]:not(:checked) + span::before {
     }
 
     .contacts__content {
+        align-items: center;
         flex-direction: column-reverse;
     }
 
@@ -1889,7 +1890,7 @@ input[type="checkbox"]:not(:checked) + span::before {
     .footer .navbar__menu {
         flex-direction: column;
 
-        margin-top: 49px;
+        margin-top: 29px;
     }
 
     .navbar__menu-item {

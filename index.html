@@ -17,20 +17,22 @@
                 <label class="burger" for="burger">
                     <span></span>
                 </label>
-                <a class="navbar__logo"></a>
+                <a class="navbar__logo">
+                    <img src="img/logo.svg" alt="логотип" width="70">
+                </a>
                 <ul class="navbar__menu">
                     <li class="navbar__menu-item">
-                        <a class="navbar__menu-link" href="#">Преимущества</a>
+                        <a class="navbar__menu-link" href="#pros">Преимущества</a>
                     </li>
                     <li class="navbar__menu-item">
-                        <a class="navbar__menu-link" href="#">Направления</a>
+                        <a class="navbar__menu-link" href="#directions">Направления</a>
 
                     </li>
                     <li class="navbar__menu-item">
-                        <a class="navbar__menu-link" href="#">Ближайшие круизы</a>
+                        <a class="navbar__menu-link" href="#cruises">Ближайшие круизы</a>
                     </li>
                     <li class="navbar__menu-item">
-                        <a class="navbar__menu-link" href="#">Контакты</a>
+                        <a class="navbar__menu-link" href="#contacts">Контакты</a>
                     </li>
 
 
@@ -47,7 +49,7 @@
             <div class="container">
                 <div class="trip__content">
                     <div class="trip__text">
-                        <h2>Путешествие на край Земли</h2>
+                        <h2 id="directions">Путешествие на край Земли</h2>
                         <p>Это волшебное путешествие поможет вам познакомиться поближе
                             с&nbsp;удивительным миром Антарктики. Наш круизный лайнер
                             отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные
@@ -69,7 +71,7 @@
             <div class="container">
                 <div class="pros__content">
                     <div class="pros__title">
-                        <h2>Преимущества</h2>
+                        <h2 id="pros">Преимущества</h2>
                     </div>
                     <div class="pros__text">
                         <div class="pros__liner">
@@ -102,7 +104,7 @@
             <div class="container">
                 <div class="cruises__content">
                     <div class="cruises__title">
-                        <h2>Ближайшие круизы</h2>
+                        <h2 id="cruises">Ближайшие круизы</h2>
                     </div>
                     <div class="cruises__cards">
                         <div class="cruises__card">
@@ -350,6 +352,7 @@
         <section class="contacts">
             <div class="container">
                 <div class="contacts__content">
+                    <h2 class="visually-hidden" id="contacts">Контакты</h2>
                     <div class="contacts__map">
                         <picture>
                             <source media="(max-width: 767px)" srcset="img/map_xs.png">
@@ -381,7 +384,9 @@
     <footer class="footer">
         <div class="container">
             <nav class="navbar">
-                <a class="navbar__logo"></a>
+                <a class="navbar__logo">
+                    <img src="img/logo.svg" alt="логотип" width="70">
+                </a>
                 <ul class="navbar__menu">
                     <li class="navbar__menu-item">
                         <a class="navbar__menu-link" href="#">Преимущества</a>
