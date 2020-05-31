@@ -1347,7 +1347,7 @@ input[type="checkbox"]:not(:checked) + span::before {
         right: 0;
 
         width: 16px;
-        height: 163px;
+        height: 13px;
     }
     .footer .navbar__menu-link {
         font-size: 12px;
